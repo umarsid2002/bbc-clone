@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://vjs.zencdn.net/8.10.0/video-js.css" rel="stylesheet" />
+
+    <!-- Video.js base CSS -->
+    <link href="https://unpkg.com/video.js@7/dist/video-js.min.css" rel="stylesheet">
+
+    <!-- Forest -->
+    <link href="https://unpkg.com/@videojs/themes@1/dist/forest/index.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+    <title>BBC - Homepage</title>
+</head>
+
+<body>
+    <header class="flex bg-black py-4 items-center justify-center">
+        <div class="w-[90vw] flex justify-between">
+            <div class="left flex items-center">
+                <div class="logo w-32">
+                    <img style="filter: invert(100);" src="./logo.svg" alt="">
+                </div>
+                <div class="signin mx-4 py-2 my-2 hover:border-b hover:pr-16 transition-all border-blue-500">
+                    <div class="signin-icon flex items-center">
+                        <img class="w-8" src="./assets/account.svg" alt="">
+                        <span class="text-white cursor-pointer mx-2 ">Sign in</span>
+                    </div>
+                </div>
+            </div>
+            <nav class="navigation text-white flex justify-center items-center ">
+                <ul class="flex space-x-10 mx-5 font-semibold">
+                    <li><a href="#" class="pb-3 hover:border-b-2 transition-all border-white">Home</a></li>
+                    <li><a href="#" class="pb-3 hover:border-b-2 transition-all border-red-700">News</a></li>
+                    <li><a href="#" class="pb-3 hover:border-b-2 transition-all border-yellow-500">Sport</a></li>
+                    <li><a href="#" class="pb-3 hover:border-b-2 transition-all border-green-700">Earth</a></li>
+                    <li><a href="#" class="pb-3 hover:border-b-2 transition-all border-blue-600">Reel</a></li>
+                    <li><a href="#" class="pb-3 hover:border-b-2 transition-all border-blue-500">Worklife</a></li>
+                    <li><a href="#" class="pb-3 hover:border-b-2 transition-all border-purple-800">Travel</a></li>
+                    <li><a href="#" class="pb-3 hover:border-b-2 transition-all border-green-800">Culture</a></li>
+                    <li><a href="#"><img class="pt-3" src="./assets/extra.svg"></a></li>
+                </ul>
+                <div class="search-box flex relative items-center">
+                    <img src="./assets/search.png" class="w-10 absolute px-2" style="filter: invert(100);" alt="">
+                    <input class="bg-[#3A3C3E] outline-none py-2 pr-2 pl-10 text-white" type="text"
+                        placeholder="Search Here">
+                </div>
+            </nav>
+        </div>
+
+    </header>
+
+    <div class="welcome flex justify-center py-12">
+        <div class="w-[90vw] flex justify-between">
+            <h2 class="text-2xl text-gray-600 font-semibold">Welcome To BBC.com</h2>
+            <h2 class="text-2xl text-gray-400 font-medium">Tuesday, 23 January</h2>
+        </div>
+    </div>
+
+    <div class="topnews flex justify-center py-8">
+        <div class="w-[90vw] newssec grid grid-rows-2 grid-cols-4 gap-x-[15px] gap-y-[15px]">
+            <div class="item item1 relative cursor-pointer">
+                <div class="gradient transition-all hover:opacity-40"></div>
+                <img src="./news/img1.jpg" class="w-[100%] h-[100%] object-cover" alt="">
+                <div class="news-content absolute bottom-0 text-white p-4">
+                    <h1 class="text-4xl pr-4">Israel says 24 soldiers killed in Gaza in one day</h1>
+                    <p class="my-4 font-normal tracking-wider">Monday was the deadliest day for Israel since the start
+                        of its ground operation.</p>
+                    <a href="#" class="uppercase border-l-2 px-3 my-6 border-red-700 hover:underline">Middle East</a>
+                </div>
+            </div>
+
+            <div class="item relative cursor-pointer">
+                <div class="gradient transition-all hover:opacity-40"></div>
+                <img src="./news/img2.jpg" class="w-[100%] h-[100%] object-cover" alt="">
+                <div class="news-content absolute bottom-0 text-white px-4 py-4">
+                    <h1 class="text-xl my-3">New US-UK strikes on Houthis send 'clearest message', says Cameron</h1>
+                    <a href="#" class="uppercase border-l-2 px-3 border-red-700 hover:underline">Middle East</a>
+                </div>
+            </div>
+            <div class="item relative cursor-pointer">
+                <div class="gradient transition-all hover:opacity-40"></div>
+                <img src="./news/img3.jpg" class="w-[100%] h-[100%] object-cover" alt="">
+                <div class="news-content absolute bottom-0 text-white px-4 py-4">
+                    <h1 class="text-xl my-3">Trump and Haley to go head-to-head in New Hampshire</h1>
+                    <a href="#" class="uppercase border-l-2 px-3 border-red-700 hover:underline">US & Canada</a>
+                </div>
+            </div>
+            <div class="item relative cursor-pointer">
+                <div class="gradient transition-all hover:opacity-40"></div>
+                <img src="./news/img4.jpg" class="w-[100%] h-[100%] object-cover" alt="">
+                <div class="news-content absolute bottom-0 text-white px-4 py-4">
+                    <h1 class="text-xl my-3">The industrial English city with more trees than people</h1>
+                    <a href="#" class="uppercase border-l-2 px-3 border-green-700 hover:underline">Travel</a>
+                </div>
+            </div>
+            <div class="item relative cursor-pointer">
+                <div class="gradient transition-all hover:opacity-40"></div>
+                <img src="./news/img5.jpg" class="w-[100%] h-[100%] object-cover" alt="">
+                <div class="news-content absolute bottom-0 text-white px-4 py-4">
+                    <h1 class="text-xl my-3">Is cursive handwriting dying out?</h1>
+                    <a href="#" class="uppercase border-l-2 px-3 border-black hover:underline">Future</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w-[90vw] mx-auto">
+        <h2 class="border-l-2 border-red-700 px-3 my-8 text-2xl text-gray-800 font-semibold">News</h2>
+    </div>
+
+    <div class="news py-8 w-[90vw] mx-auto flex space-x-5">
+        <div class="left flex w-[75%] flex flex-col">
+            <section id="news-portion" class="flex space-x-5">
+                <!-- News Box -->
+                <div class="news-box flex flex-col">
+                    <img src="./news2/img1.jpg" alt="">
+                    <h2 class="text-xl font-semibold my-3">Myanmar's army is losing - and facing fire from a militant
+                        monk</h2>
+                    <p>A challenge from ultra-nationalist Buddhist monks is piling pressure on the loathed coup leader.
+                    </p>
+                    <a href="#" class="uppercase border-l-2 px-3 border-red-600 hover:underline my-5">Asia</a>
+                </div>
+                <div class="news-box flex flex-col">
+                    <img src="./news2/img2.jpg" alt="">
+                    <h2 class="text-xl font-semibold my-3">
+                        Six dead after gas tanker crashes and explodes
+                    </h2>
+                    <p>Hundreds of firefighters battled the massive blaze following a car crash in Mongolia's capital.
+                    </p>
+                    <a href="#" class="uppercase border-l-2 px-3 border-red-600 hover:underline my-5">Asia</a>
+                </div>
+                <div class="news-box flex flex-col">
+                    <img src="./news2/img3.jpg" alt="">
+                    <h2 class="text-xl font-semibold my-3">First IVF rhino pregnancy 'could save species'</h2>
+                    <p>A fertility breakthrough offers hope for saving the northern white rhino from extinction.</p>
+                    <a href="#" class="uppercase border-l-2 px-3 border-red-600 hover:underline my-5">Science &
+                        Environment</a>
+                </div>
+            </section>
+            <section id="sport-portion" class="flex flex-col">
+                <div class="heading">
+                    <h2 class="border-l-2 border-yellow-500 px-3 my-8 text-2xl text-gray-800 font-semibold">Sport</h2>
+                </div>
+                <div class="sport-news flex space-x-5">
+                    <!-- News Box -->
+                    <div class="news-box flex flex-col">
+                        <img src="./sports/img1.jpg" alt="">
+                        <h2 class="text-xl font-semibold my-3">Australian Open: Zverev leads Alcaraz by set and a break
+                            - radio & text</h2>
+                        <p>Second seed Carlos Alcaraz takes on sixth seed Alexander Zverev in the Australian Open
+                            quarter-finals - follow radio and text commentary</p>
+                        <a href="#" class="uppercase border-l-2 px-3 border-yellow-500 hover:underline my-5">tennis</a>
+                    </div>
+                    <div class="news-box flex flex-col">
+                        <img src="./sports/img2.png" alt="">
+                        <h2 class="text-xl font-semibold my-3">Latest on Phillips and Trippier & EFL Cup reaction</h2>
+                        <p>Latest on the Kalvin Phillips and Kieran Trippier transfer news, plus reaction to Chelsea's
+                            EFL Cup semi-final win and build-up to Fulham v Liverpool.</p>
+                        <a href="#" class="uppercase border-l-2 px-3 border-yellow-500 hover:underline my-5">sports</a>
+                    </div>
+                    <div class="news-box flex flex-col">
+                        <img src="./sports/img3.jpg" alt="">
+                        <h2 class="text-xl font-semibold my-3">'Destroyed' Medvedev into Australian Open semis</h2>
+                        <p>Daniil Medvedev uses his greater experience deep in a Grand Slam to beat Hubert Hurkacz and
+                            reach the Australian Open semi-finals.</p>
+                        <a href="#" class="uppercase border-l-2 px-3 border-yellow-500 hover:underline my-5">sports</a>
+                    </div>
+                </div>
+
+            </section>
+        </div>
+
+        <div class="right-ad w-[25%] bg-gray-400">
+            Advertizement here
+        </div>
+    </div>
+
+    <!-- About Earth -->
+    <div class="about-earth bg-earthback py-5 my-4">
+        <div class="w-[90vw] m-auto flex justify-between items-center">
+            <div class="btn1 flex flex-col">
+                <div class="btn-heading flex">
+                    <h2 class="border-2 cursor-pointer my-4 border-white px-3 pb-1 text-2xl text-white font-bold">News
+                    </h2>
+                </div>
+                <div class="btn-para">
+                    <h2 class="text-white text-lg">Solutions for a sustainable world</h2>
+                </div>
+            </div>
+            <div class="btn2 flex self-start mt-2">
+                <button class="text-white text-xl outline-2 outline-white outline rounded-xl pl-3">
+                    Visit Earth
+                    <i class="fa-solid fa-arrow-right pl-16 pr-3"></i>
+                </button>
+            </div>
+        </div>
+        <div class="w-[90vw] m-auto flex space-x-8 my-5">
+            <div class="earth-article bg-white">
+                <img src="./misc/img2.jpg" alt="">
+                <h2 class="text-xl font-semibold px-4 my-3 pb-2">The cities cutting back on cars</h2>
+            </div>
+            <div class="earth-article bg-white">
+                <img src="./misc/img3.jpg" alt="">
+                <h2 class="text-xl font-semibold px-4 my-3 pb-2">The plastic oceans we can't see</h2>
+            </div>
+            <div class="earth-article bg-white">
+                <img src="./misc/img4.jpg" alt="">
+                <h2 class="text-xl font-semibold px-4 my-3 pb-2">Which low-cost heating hacks really work</h2>
+            </div>
+        </div>
+    </div>
+    <!-- About Earth End -->
+
+    <!-- Asia News -->
+    <div class="w-[90vw] mx-auto flex flex-col">
+        <h2 class="border-l-2 border-red-700 px-3 my-8 text-2xl text-gray-800 font-semibold">Asia News</h2>
+        <div class="news flex space-x-5">
+            <div class="asia-article w-[25%] bg-white flex flex-col">
+                <img src="./asia-news/img1.jpg" alt="">
+                <div class="article-content py-2 h-[100%]">
+                    <h2 class="text-xl font-semibold">SK-II sales hurt by anti-Japan sentiment in China</h2>
+                    <p class="mt-3 pb-2">Consumers shunned the skincare brand after Tokyo released treated water from
+                        Fukushima nuclear plant.
+                    </p>
+                </div>
+                <a href="#" class="uppercase border-l-2 px-3 border-yellow-500 hover:underline my-5">Business</a>
+            </div>
+            <div class="asia-article w-[25%] bg-white flex flex-col">
+                <img src="./asia-news/img2.jpg" alt="">
+                <div class="article-content py-2 h-[100%]">
+                    <h2 class="text-xl font-semibold">Bopanna, 43, to become oldest tennis world number one</h2>
+                    <p class="mt-3 pb-2">Rohan Bopanna becomes the oldest tennis world number one aged 43 after he and
+                        Matthew Ebden reach the Australian Open doubles semi-finals.
+                    </p>
+                </div>
+                <a href="#" class="uppercase border-l-2 px-3 border-yellow-500 hover:underline my-5">Tennis</a>
+            </div>
+            <div class="asia-article w-[25%] bg-white flex flex-col">
+                <img src="./asia-news/img3.jpg" alt="">
+                <div class="article-content py-2 h-[100%]">
+                    <h2 class="text-xl font-semibold">Controversy after Ukrainian-born model crowned Miss Japan</h2>
+                    <p class="mt-3 pb-2">A beauty queen has once again re-ignited a debate on what it means to be
+                        Japanese.
+                    </p>
+                </div>
+                <a href="#" class="uppercase border-l-2 px-3 border-yellow-500 hover:underline my-5">asia</a>
+            </div>
+            <div class="asia-article w-[25%] bg-white flex flex-col">
+                <img src="./asia-news/img4.jpg" alt="">
+                <div class="article-content py-2 h-[100%]">
+                    <h2 class="text-xl font-semibold">Indian villagers taking on a billionaire's port plan</h2>
+                    <p class="mt-3 pb-2">Locals in 100 villages of Tamil Nadu state are fighting the expansion of a port
+                        owned by Gautam Adani.
+                    </p>
+                </div>
+                <a href="#" class="uppercase border-l-2 px-3 border-yellow-500 hover:underline my-5">asia</a>
+            </div>
+        </div>
+    </div>
+    <!-- Asia News End -->
+
+    <!-- Editor Picks -->
+    <div class="editor flow-root bg-gray-100 py-4">
+        <div class="w-[90vw] m-auto">
+            <h2 class="border-l-2 border-blue-600 mt-5 px-3 text-2xl text-gray-800 font-semibold">Editor’s Picks</h2>
+            <div class="left w-[68%] my-4 mr-4 inline-block float-left">
+                <div class="main relative">
+                    <div class="gradient z-10"></div>
+                    <img class="w-[100%] h-[100%] object-cover" src="./misc/img1.jpg" alt="">
+                    <div class="content z-10 absolute bottom-0 p-4 flex flex-col space-y-4">
+                        <h2 class="text-5xl font-semibold text-white leading-[3.5rem]">Hiking Madeira's death-defying
+                            mountain paths</h2>
+                        <p class="text-white text-xl">Once used to colonise Madeira, its aqueducts now guide
+                            thrill-seeking tourists</p>
+                        <a href="#"
+                            class="uppercase border-l-2 px-3 border-green-700 hover:underline text-white">Travel</a>
+                    </div>
+
+                </div>
+
+                <div class="articles flex my-4 flex-wrap">
+
+                    <div class="editor-pick w-[32%] bg-white flex flex-col mr-3 my-4">
+                        <img src="./editor/img1.jpg" alt="">
+                        <div class="article-content px-3 py-2 h-[100%]">
+                            <h2 class="text-xl font-semibold">Masters of the Air review: 'Gripping' but 'creaky' ★★★☆☆
+                            </h2>
+                            <p class="mt-3 pb-2">Apple TV+'s new series starring Austin Butler reckons with the moral
+                                cost of war
+                            </p>
+                        </div>
+                        <a href="#" class="uppercase border-l-2 mx-3 px-3 border-black hover:underline my-5">CULTURE</a>
+                    </div>
+
+                    <div class="editor-pick w-[32%] bg-white flex flex-col mr-3 my-4">
+                        <img src="./asia-news/img2.jpg" alt="">
+                        <div class="article-content px-3 py-2 h-[100%]">
+                            <h2 class="text-xl font-semibold">Why employers are stingy with interview feedback</h2>
+                            <p class="mt-3 pb-2">Candidates want to know how they've done, but employers think it's
+                                risky
+                            </p>
+                        </div>
+                        <a href="#"
+                            class="uppercase border-l-2 mx-3 px-3 border-blue-700 hover:underline my-5">Worklife</a>
+                    </div>
+
+                    <div class="editor-pick w-[32%] bg-white flex flex-col mr-3 my-4">
+                        <img src="./editor/img3.jpg" alt="">
+                        <div class="article-content px-3 py-2 h-[100%]">
+                            <h2 class="text-xl font-semibold">How one rhino became a global celebrity</h2>
+                            <p class="mt-3 pb-2">Photographing the last male northern white rhino
+                            </p>
+                        </div>
+                        <a href="#" class="uppercase border-l-2 mx-3 px-3 border-black hover:underline my-5">FUTURE</a>
+                    </div>
+
+                    <div class="editor-pick w-[32%] bg-white flex flex-col mr-3 my-4">
+                        <img src="./editor/img4.jpg" alt="">
+                        <div class="article-content px-3 py-2 h-[100%]">
+                            <h2 class="text-xl font-semibold">Add salt to make perfect cup of tea, US scientist says
+                            </h2>
+                            <p class="mt-3 pb-2">The US Embassy describes Prof Michelle Francl's tea recipe as an
+                                "unthinkable notion"
+                            </p>
+                        </div>
+                        <a href="#" class="uppercase border-l-2 mx-3 px-3 border-blue-700 hover:underline my-5">UK</a>
+                    </div>
+
+                    <div class="editor-pick w-[32%] bg-white flex flex-col mr-3 my-4">
+                        <img src="./editor/img5.jpg" alt="">
+                        <div class="article-content px-3 py-2 h-[100%]">
+                            <h2 class="text-xl font-semibold">Inside the nine-month cruise going viral on TikTok
+                            </h2>
+                            <p class="mt-3 pb-2">Videos under the hashtag #ultimateworldcruise have over 353 million
+                                views
+                            </p>
+                        </div>
+                        <a href="#"
+                            class="uppercase border-l-2 mx-3 px-3 border-blue-700 hover:underline my-5">Newsbeat</a>
+                    </div>
+
+                    <div class="editor-pick w-[32%] bg-white flex flex-col mr-3 my-4">
+                        <img src="./editor/img6.jpg" alt="">
+                        <div class="article-content px-3 py-2 h-[100%]">
+                            <h2 class="text-xl font-semibold">Saudi Arabia to get first alcohol shop in 70 years
+                            </h2>
+                            <p class="mt-3 pb-2">The government plans a store in Riyadh for foreign diplomats - ending
+                                decades of prohibition
+                            </p>
+                        </div>
+                        <a href="#" class="uppercase border-l-2 mx-3 px-3 border-blue-700 hover:underline my-5">Middle
+                            east</a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="right w-[30%] my-4 inline-block float-left">
+                <div class="latest-business">
+                    <div class="heading bg-red-700 text-xl font-medium text-white px-4 py-2">
+                        Latest business News
+                    </div>
+                    <div class="content flex flex-col">
+                        <div class="box flex px-4 py-8 items-center justify-evenly bg-gray-800 text-white">
+                            <div class="number bg-red-700 rounded-[50%] px-3 py-1 italic text-white text-3xl">1</div>
+                            <div class="text text-xl px-4">
+                                Tesla warns of 'notably lower' sales growth in 2024
+                            </div>
+                        </div>
+
+                        <div class="box flex px-4 py-8 items-center justify-evenly bg-gray-800 text-white">
+                            <div class="number bg-red-700 rounded-[50%] px-3 py-1 italic text-white text-3xl">2</div>
+                            <div class="text text-xl px-4">
+                                Grounded jets cleared to fly after Alaska blow out
+                            </div>
+                        </div>
+
+                        <div class="box flex px-4 py-8 items-center justify-evenly bg-gray-800 text-white">
+                            <div class="number bg-red-700 rounded-[50%] px-3 py-1 italic text-white text-3xl">3</div>
+                            <div class="text text-xl px-4">
+                                Billionaire Lewis pleads guilty to insider trading
+                            </div>
+                        </div>
+
+                        <div class="box flex px-4 py-8 items-center justify-evenly bg-gray-800 text-white">
+                            <div class="number bg-red-700 rounded-[50%] px-3 py-1 italic text-white text-3xl">4</div>
+                            <div class="text text-xl px-4">
+                                Netflix password crackdown fuels sign-up surge
+                            </div>
+                        </div>
+
+                        <div class="box flex px-4 py-8 items-center justify-evenly bg-gray-800 text-white">
+                            <div class="number bg-red-700 rounded-[50%] px-3 py-1 italic text-white text-3xl">5</div>
+                            <div class="text text-xl px-4">
+                                Netflix password crackdown fuels sign-up surge
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Editor Picks End -->
+
+    <!-- About Reel -->
+    <div class="about-earth bg-reelback py-5 my-4">
+        <div class="w-[90vw] m-auto flex justify-between items-center">
+            <div class="btn1 flex flex-col">
+                <div class="btn-heading flex">
+                    <h2 class="cursor-pointer my-4 pb-1 uppercase text-5xl text-white font-bold">News
+                    </h2>
+                </div>
+                <div class="btn-para">
+                    <h2 class="text-white text-lg">The most amazing videos from the BBC</h2>
+                </div>
+            </div>
+            <div class="btn2 flex self-center mt-2">
+                <button class="text-white text-xl outline-2 outline-white outline rounded-xl pl-3 transition-all hover:bg-black">
+                    Visit Reel
+                    <i class="fa-solid fa-arrow-right pl-16 pr-3"></i>
+                </button>
+            </div>
+        </div>
+        <div class="w-[90vw] m-auto flex space-x-8 my-5">
+            <div class="earth-article bg-white">
+                <img src="./misc/img5.jpg" alt="">
+                <h2 class="text-xl font-semibold px-4 my-3 pb-2">The secrets hidden in a reindeer brain</h2>
+            </div>
+            <div class="earth-article bg-white">
+                <img src="./misc/img6.jpg" alt="">
+                <h2 class="text-xl font-semibold px-4 my-3 pb-2">Berlin's disused war bunkers</h2>
+            </div>
+            <div class="earth-article bg-white">
+                <img src="./misc/img7.jpg" alt="">
+                <h2 class="text-xl font-semibold px-4 my-3 pb-2">The 70-year-old Japanese snake hunters</h2>
+            </div>
+        </div>
+    </div>
+    <!-- About Reel End -->
+
+    <!-- videos Start -->
+    <div class="w-[90vw] m-auto">
+        <video id="my-video" class="video-js vjs-theme-forest" data-setup="{}" controls style="width:100%;">
+            <source src="./videos/video2.mp4" type="video/mp4" style="width: 700px;" />
+        </video>
+
+        <div class="video-box bg-gray-800 text-white px-12 py-5 space-y-4">
+            <h2 class="text-2xl px-14">Latest</h2>
+            <div class="videolist pb-5">
+                <div class="owl-carousel owl-theme relative px-14">
+
+                    <div class="item cursor-pointer bg-transparent">
+                        <div class="video-pick flex">
+                            <img class="w-24 h-32" src="./videos/cover/1.jpg" alt="">
+                            <div class="video-content bg-transparent px-3 h-[100%]">
+                                <h2 class="text-xl mb-4 font-semibold">Thai police to charge two over pet lion</h2>
+                                <a href="#"
+                                    class="uppercase border-l-2 px-3 border-blue-700 hover:underline my-5">Asia</a>
+                                <input type="hidden" value="./videos/video2.mp4">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item cursor-pointer bg-transparent">
+                        <div class="video-pick flex">
+                            <img class="w-24 h-32" src="./videos/cover/2.jpg" alt="">
+                            <div class="video-content bg-transparent px-3 h-[100%]">
+                                <h2 class="text-xl mb-4 font-semibold">Woman rescued after 14 hours stop...</h2>
+                                <input type="hidden" value="./videos/video1.mp4">
+                                <a href="#" class="uppercase border-l-2 px-3 border-blue-700 hover:underline my-5">us &
+                                    canada</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item cursor-pointer bg-transparent">
+                        <div class="video-pick flex">
+                            <img class="w-24 h-32" src="./videos/cover/3.jpg" alt="">
+                            <div class="video-content bg-transparent px-3 h-[100%]">
+                                <h2 class="text-xl mb-4 font-semibold">Moment twins taken and sold at birth reunite</h2>
+                                <input type="hidden" value="./videos/video3.mp4">
+                                <a href="#"
+                                    class="uppercase border-l-2 px-3 border-blue-700 hover:underline my-5">Europe</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item cursor-pointer bg-transparent">
+                        <div class="video-pick flex">
+                            <img class="w-24 h-32" src="./videos/cover/4.jpg" alt="">
+                            <div class="video-content bg-transparent px-3 h-[100%]">
+                                <h2 class="text-xl mb-4 font-semibold">Huge fire at hospital in Iran capital</h2>
+                                <input type="hidden" value="./videos/video4.mp4">
+                                <a href="#"
+                                    class="uppercase border-l-2 px-3 border-blue-700 hover:underline my-5">Middle
+                                    East</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- videos End -->
+
+    <!-- BBC More -->
+    <div class="editor flow-root bg-gray-100 py-4 mt-8">
+        <div class="w-[90vw] m-auto">
+            <h2 class="border-l-2 border-blue-600 my-2 px-3 text-2xl text-gray-600 font-bold">More around the BBC</h2>
+            <div class="left w-[30%] my-4 mr-4 inline-block float-left">
+                <div class="latest-business">
+                    <div class="heading bg-red-700 text-xl font-semibold text-white px-4 py-2">
+                        FROM OUR CORRESPONDENTS
+                    </div>
+                    <div class="content flex flex-col">
+
+                        <div
+                            class="box cursor-pointer flex px-4 py-8 items-center justify-evenly bg-gray-800 text-white">
+                            <div class="author-img w-[20%]"><img src="./authors/1.jpg" class="rounded-[50%] px-3 py-1"
+                                    alt=""></div>
+                            <div class="text text-xl px-4 w-[80%]">
+                                <div class="heading">Mediators push for Gaza ceasefire but gaps remain
+                                </div>
+                                <div class="author-name text-sm italic my-2">
+                                    By Yolande Knell
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div
+                            class="box cursor-pointer flex px-4 py-8 items-center justify-evenly bg-gray-800 text-white">
+                            <div class="author-img w-[20%]"><img src="./authors/2.jpg" class="rounded-[50%] px-3 py-1"
+                                    alt=""></div>
+                            <div class="text text-xl px-4 w-[80%]">
+                                <div class="heading"> In-N-Out Burger closes California store over crime
+                                </div>
+                                <div class="author-name text-sm italic my-2">
+                                    By Madeline Halpert
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div
+                            class="box cursor-pointer flex px-4 py-8 items-center justify-evenly bg-gray-800 text-white">
+                            <div class="author-img w-[20%]"><img src="./authors/3.jpg" class="rounded-[50%] px-3 py-1"
+                                    alt=""></div>
+                            <div class="text text-xl px-4 w-[80%]">
+                                <div class="heading"> Race not over, insists Haley after defeat
+                                </div>
+                                <div class="author-name text-sm italic my-2">
+                                    By Holly Honderich
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div
+                            class="box cursor-pointer flex px-4 py-8 items-center justify-evenly bg-gray-800 text-white">
+                            <div class="author-img w-[20%]"><img src="./authors/4.jpg" class="rounded-[50%] px-3 py-1"
+                                    alt=""></div>
+                            <div class="text text-xl w-[80%] px-4">
+                                <div class="heading"> Myanmar's army is losing - and facing fire from a militant monk
+                                </div>
+                                <div class="author-name text-sm italic my-2">
+                                    By Jonathan Head
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div
+                            class="box cursor-pointer flex px-4 py-8 items-center justify-evenly bg-gray-800 text-white">
+                            <div class="author-img w-[20%]"><img src="./authors/5.jpg" class="rounded-[50%] px-3 py-1"
+                                    alt=""></div>
+                            <div class="text text-xl w-[80%] px-4">
+                                <div class="heading"> New coffee genetic map promises better brews
+                                </div>
+                                <div class="author-name text-sm italic my-2">
+                                    By Helen Briggs
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div
+                            class="box cursor-pointer flex px-4 py-8 items-center justify-evenly bg-gray-800 text-white">
+                            <div class="author-img w-[20%]"><img src="./authors/6.jpg" class="rounded-[50%] px-3 py-1"
+                                    alt=""></div>
+                            <div class="text text-xl w-[80%] px-4">
+                                <div class="heading">'Send back our husbands' - Russian women in rare protest
+                                </div>
+                                <div class="author-name text-sm italic my-2">
+                                    By Steve Rosenberg
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div
+                            class="box cursor-pointer flex px-4 py-8 items-center justify-evenly bg-gray-800 text-white">
+                            <div class="author-img w-[20%]"><img src="./authors/7.jpg" class="rounded-[50%] px-3 py-1"
+                                    alt=""></div>
+                            <div class="text text-xl w-[80%] px-4">
+                                <div class="heading"> No bail, no trial: Freedom on hold for Indian activist
+                                </div>
+                                <div class="author-name text-sm italic my-2">
+                                    By Soutik Biswas and Umang Poddar
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div
+                            class="box cursor-pointer flex px-4 py-8 items-center justify-evenly bg-gray-800 text-white">
+                            <div class="author-img w-[20%]"><img src="./authors/8.jpg" class="rounded-[50%] px-3 py-1"
+                                    alt=""></div>
+                            <div class="text text-xl w-[80%] px-4">
+                                <div class="heading">Haley finally gets her solo showdown with Trump
+                                </div>
+                                <div class="author-name text-sm italic my-2">
+                                    By Anthony Zurcher
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="right w-[68%] my-4 inline-block float-left">
+                <div class="main relative">
+                    <div class="gradient z-10"></div>
+                    <img class="w-[100%] h-[100%] object-cover" src="./bbc-more/1.jpg" alt="">
+                    <div class="content z-10 absolute bottom-0 p-4 flex flex-col space-y-4">
+                        <h2 class="text-5xl font-semibold text-white leading-[3.5rem]">
+                            Hermit crabs are 'wearing' our plastic rubbish
+                        </h2>
+                        <p class="text-white text-xl">
+                            Hermit crabs all over the world are using our discarded plastic and other waste in place of
+                            their...</p>
+                        <a href="#" class="uppercase border-l-2 px-3 border-red-700 hover:underline text-white">Science
+                            & Environment</a>
+                    </div>
+
+                </div>
+
+                <div class="articles flex my-4 flex-wrap">
+
+                    <div class="editor-pick w-[32%] bg-white flex flex-col mr-3 my-4">
+                        <img src="./bbc-more/2.jpg" alt="">
+                        <div class="article-content px-3 py-2 h-[100%]">
+                            <h2 class="text-xl font-semibold">
+                                Faithful viewers gear up for The Traitors finale</h2>
+                        </div>
+                        <a href="#"
+                            class="uppercase border-l-2 mx-3 px-3 border-red-700 hover:underline my-5">ENTERTAINMENT &
+                            ARTS</a>
+                    </div>
+
+                    <div class="editor-pick w-[32%] bg-white flex flex-col mr-3 my-4">
+                        <img src="./bbc-more/3.jpg" alt="">
+                        <div class="article-content px-3 py-2 h-[100%]">
+                            <h2 class="text-xl font-semibold">US millennials need mum and dad's help to pay bills</h2>
+                        </div>
+                        <a href="#" class="uppercase border-l-2 mx-3 px-3 border-blue-700 hover:underline my-5">Us &
+                            canada</a>
+                    </div>
+
+                    <div class="editor-pick w-[32%] bg-white flex flex-col mr-3 my-4">
+                        <img src="./bbc-more/4.jpg" alt="">
+                        <div class="article-content px-3 py-2 h-[100%]">
+                            <h2 class="text-xl font-semibold">Microsoft lays off 1,900 gaming division staff</h2>
+                        </div>
+                        <a href="#" class="uppercase border-l-2 mx-3 px-3 border-black hover:underline my-5">FUTURE</a>
+                    </div>
+
+                    <div class="editor-pick w-[32%] bg-white flex flex-col mr-3 my-4">
+                        <img src="./bbc-more/5.jpg" alt="">
+                        <div class="article-content px-3 py-2 h-[100%]">
+                            <h2 class="text-xl font-semibold">Alarming 45-fold rise in measles in Europe - WHO</h2>
+                        </div>
+                        <a href="#"
+                            class="uppercase border-l-2 mx-3 px-3 border-blue-700 hover:underline my-5">Health</a>
+                    </div>
+
+                    <div class="editor-pick w-[32%] bg-white flex flex-col mr-3 my-4">
+                        <img src="./bbc-more/6.jpg" alt="">
+                        <div class="article-content px-3 py-2 h-[100%]">
+                            <h2 class="text-xl font-semibold">Bathers, wavers and semi-quavers: Africa's top shots
+                            </h2>
+                        </div>
+                        <a href="#"
+                            class="uppercase border-l-2 mx-3 px-3 border-blue-700 hover:underline my-5">Africa</a>
+                    </div>
+
+                    <div class="editor-pick w-[32%] bg-white flex flex-col mr-3 my-4">
+                        <img src="./bbc-more/8.png" alt="">
+                        <div class="article-content px-3 py-2 h-[100%]">
+                            <h2 class="text-xl font-semibold">Pokémon makers investigate Palworld copycat claims
+                            </h2>
+                        </div>
+                        <a href="#"
+                            class="uppercase border-l-2 mx-3 px-3 border-blue-700 hover:underline my-5">Newsbeat</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- BBC More End -->
+
+    <!-- World In Start -->
+    <div class="w-[90vw] mx-auto">
+        <h2 class="border-l-2 border-blue-700 px-3 my-8 text-2xl text-gray-600 font-bold">World in pictures
+        </h2>
+
+        <div class="world-pics">
+            <div class="world-main flex space-x-5">
+                <div class="item relative w-[49%]">
+                    <div class="gradient"></div>
+                    <img src="./world/1.jpg" class="w-[100%] h-[100%] object-cover" alt="">
+                    <div class="icon bg-black absolute top-0"><img class="p-2 w-16" src="./assets/camera.png" alt=""></div>
+                    <div class="news-content absolute bottom-0 text-white px-4 py-4">
+                        <h1 class="text-xl font-bold my-3">Rolling Tuscan fields among stunning travel award photos</h1>
+                        <a href="#" class="uppercase border-l-2 px-3 border-blue-500 hover:underline">in pictures</a>
+                    </div>
+                </div>
+    
+                <div class="item relative w-[49%]">
+                    <div class="gradient"></div>
+                    <img src="./world/2.jpg" class="w-[100%] h-[100%] object-cover" alt="">
+                    <div class="icon bg-black absolute top-0"><img class="p-2 w-16" src="./assets/camera.png" alt=""></div>
+                    <div class="news-content absolute bottom-0 text-white px-4 py-4">
+                        <h1 class="text-xl font-bold my-3">Football fever and giant cake: Africa's top shots</h1>
+                        <a href="#" class="uppercase border-l-2 px-3 border-blue-500 hover:underline">Africa</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="world-below flex space-x-5 mt-4 mb-8">
+                
+                <div class="item relative w-[33%] flex flex-col bg-slate-100 border-r-2 border-l-2 border-b-2 border-gray-300 text-black">
+                    <!-- <div class="gradient"></div> -->
+                    <img src="./world/3.jpg" class="w-[100%] h-[100%] object-cover" alt="">
+                    <div class="icon bg-black absolute top-0"><img class="p-2 w-16" src="./assets/camera.png" alt=""></div>
+                    <div class="news-content mb-4 text-black px-4 py-4 h-[100%]">
+                        <h1 class="text-xl font-bold my-3">Snowy scenes from around the UK</h1>
+                    </div>
+                    <a href="#" class="uppercase border-l-2 px-3 mx-4 mb-4 border-blue-500 hover:underline">features</a>
+                </div>
+
+                <div class="item relative w-[33%] flex flex-col bg-slate-100 border-r-2 border-l-2 border-b-2 border-gray-300 text-black">
+                    <!-- <div class="gradient"></div> -->
+                    <img src="./world/4.jpg" class="w-[100%] h-[100%] object-cover" alt="">
+                    <div class="icon bg-black absolute top-0"><img class="p-2 w-16" src="./assets/camera.png" alt=""></div>
+                    <div class="news-content mb-4 text-black h-[100%] px-4 py-4">
+                        <h1 class="text-xl font-bold my-3">Women take the lead in India’s Republic Day parade</h1>
+                    </div>
+                    <a href="#" class="uppercase border-l-2 px-3 mx-4 mb-4 border-blue-500 hover:underline">india</a>
+                </div>
+
+                <div class="item relative w-[33%] flex flex-col bg-slate-100 border-r-2 border-l-2 border-b-2 border-gray-300 text-black">
+                    <!-- <div class="gradient"></div> -->
+                    <img src="./world/5.jpg" class="w-[100%] h-[100%] object-cover" alt="">
+                    <div class="icon bg-black absolute top-0"><img class="p-2 w-16" src="./assets/camera.png" alt=""></div>
+                    <div class="news-content mb-4 text-black h-[100%] px-4 py-4">
+                        <h1 class="text-xl font-bold my-3">Bathers, wavers and semi-quavers: Africa's top shots</h1>
+                    </div>
+                    <a href="#" class="uppercase border-l-2 px-3 mx-4 mb-4 border-blue-500 hover:underline">Africa</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- World In End -->
+
+    <footer class="bg-gray-700">
+        <div class="footer w-[90%] mx-auto pb-5">
+            <h2 class="px-3 py-5 text-2xl text-white font-bold">Explore the BBC</h2>
+            <div class="grid grid-cols-6 px-3 pb-5 text-white border-b border-white">
+
+                <div class="link-box flex flex-col space-y-2 border-r border-white mr-5">
+                    <a href="#" class="hover:underline">Home</a>
+                    <a href="#" class="hover:underline">Travel</a>
+                </div>
+
+                <div class="link-box flex flex-col space-y-2 border-r border-white mr-5">
+                    <a href="#" class="hover:underline">News</a>
+                    <a href="#" class="hover:underline">Culture</a>
+                </div>
+
+                <div class="link-box flex flex-col space-y-2 border-r border-white mr-5">
+                    <a href="#" class="hover:underline">Sport</a>
+                    <a href="#" class="hover:underline">Future</a>
+                </div>
+
+                <div class="link-box flex flex-col space-y-2 border-r border-white mr-5">
+                    <a href="#" class="hover:underline">Earth</a>
+                    <a href="#" class="hover:underline">Tv</a>
+                </div>
+
+                <div class="link-box flex flex-col space-y-2 border-r border-white mr-5">
+                    <a href="#" class="hover:underline">Reel</a>
+                    <a href="#" class="hover:underline">Weather</a>
+                </div>
+
+                <div class="link-box flex flex-col space-y-2 border-r border-white mr-5">
+                    <a href="#" class="hover:underline">Worklife</a>
+                    <a href="#" class="hover:underline">Sounds</a>
+                </div>
+            </div>
+            <div class="bottom-links flex space-x-5 px-3 py-4 text-white text-sm">
+                <a href="#" class="hover:underline">Terms of Use</a>
+                <a href="#" class="hover:underline">About the BBC</a>
+                <a href="#" class="hover:underline">Privacy Policy</a>
+                <a href="#" class="hover:underline">Cookies</a>
+                <a href="#" class="hover:underline">Accessibility Help</a>
+                <a href="#" class="hover:underline">Parental Guidance</a>
+                <a href="#" class="hover:underline">Contact the BBC</a>
+                <a href="#" class="hover:underline">BBC emails for you</a>
+                <a href="#" class="hover:underline">Advertise with us</a>
+                <a href="#" class="hover:underline">Do not share or sell my info</a>
+            </div>
+
+            <div class="copyright px-3 text-white text-sm">
+                <p>Copyright © 2024 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+            </div>
+        </div>
+    </footer>
+        
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+    <script src="https://vjs.zencdn.net/8.10.0/video.min.js"></script>
+</body>
+
+</html>
